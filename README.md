@@ -50,6 +50,7 @@ The `memory-bank` directory is the core of this framework. It is structured as f
      └── tasks/
          └── _index.md            (Task management system)
 ```
+```mermaid
 flowchart TD
     PB[projectbrief.md] --> PC[productContext.md]
     PB --> SP[systemPatterns.md]
@@ -61,5 +62,6 @@ flowchart TD
     
     AC --> P[progress.md]
     AC --> TF[tasks/ folder]
+```
 
 This hierarchical structure ensures that the agent has a layered and comprehensive understanding of the project at all times.
