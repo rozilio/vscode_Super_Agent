@@ -50,5 +50,16 @@ The `memory-bank` directory is the core of this framework. It is structured as f
      └── tasks/
          └── _index.md            (Task management system)
 ```
+flowchart TD
+    PB[projectbrief.md] --> PC[productContext.md]
+    PB --> SP[systemPatterns.md]
+    PB --> TC[techContext.md]
+    
+    PC --> AC[activeContext.md]
+    SP --> AC
+    TC --> AC
+    
+    AC --> P[progress.md]
+    AC --> TF[tasks/ folder]
 
 This hierarchical structure ensures that the agent has a layered and comprehensive understanding of the project at all times.
