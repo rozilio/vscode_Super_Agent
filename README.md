@@ -10,26 +10,33 @@ There are two options to set up the project environment.
 
 This option uses the agent to create and initialize all the necessary files.
 
-1.  **Open a new or existing project** in your IDE.
-2.  **Copy the `main.instructions.md` file** to the following directory (create the path if it does not exist):
+1. **Open a new or existing project** in your IDE.
+2. **Copy the `main.instructions.md` file** to the following directory (create the path if it does not exist):
+
     ```
     C:\<YOUR_PROJECT_DIRECTORY>\.github\instructions\
     ```
-3.  **In PLAN MODE, issue the following command:**
+
+3. **In PLAN MODE, issue the following command:**
+
     ```
     initialize memory bank and create all the core and optional files
     ```
-4.  **Switch to ACT MODE** and approve the agent's actions.
+
+4. **Switch to ACT MODE** and approve the agent's actions.
 
 ### Option B: Manual Setup
 
 This option involves manually setting up the file structure.
 
-1.  **Copy the `main.instructions.md` file** to the following directory (create the path if it does not exist):
+1. **Copy the `main.instructions.md` file** to the following directory (create the path if it does not exist):
+
     ```
     C:\<YOUR_PROJECT_DIRECTORY>\.github\instructions\
     ```
-2.  **Copy the `memory-bank` directory** to the root of your project:
+
+2. **Copy the `memory-bank` directory** to the root of your project:
+
     ```
     C:\<YOUR_PROJECT_DIRECTORY>\
     ```
@@ -38,7 +45,8 @@ This option involves manually setting up the file structure.
 
 The `memory-bank` directory is the core of this framework. It is structured as follows:
 
-```
+```mermaid
+
 <YOUR_PROJECT_DIRECTORY>
 ├── memory-bank/
      ├── projectbrief.md          (Foundation - created first)
@@ -50,7 +58,9 @@ The `memory-bank` directory is the core of this framework. It is structured as f
      └── tasks/
          └── _index.md            (Task management system)
 ```
+
 ```mermaid
+
 flowchart TD
     PB[projectbrief.md] --> PC[productContext.md]
     PB --> SP[systemPatterns.md]
@@ -65,3 +75,11 @@ flowchart TD
 ```
 
 This hierarchical structure ensures that the agent has a layered and comprehensive understanding of the project at all times.
+
+## Additional Configuration
+
+### Implement Ruls by agent
+
+### VSCODE Todo List Tool
+
+"chat.todoListTool.enabled": true

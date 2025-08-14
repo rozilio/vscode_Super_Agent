@@ -49,6 +49,8 @@ flowchart TD
    - Key technical decisions
    - Design patterns in use
    - Component relationships
+   - Always consider scalability and maintainability
+   - always refer to the rules and guidelines in [main instructions](./main.instructions.md) for detailed guidelines on system design and implementation.
 
 5. `techContext.md`
    - Technologies used
